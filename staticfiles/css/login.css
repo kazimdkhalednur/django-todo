@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  outline: none;
+}
+
+.flex {
+  display: flex;
+}
+
+.messages {
+  margin: 0 -1.5rem;
+  padding: .50rem 0 .30rem .75rem;
+  background: #b2ffb2;
+}
+
+.check-svg {
+  padding-right: .25rem;
+}
+
+.messsage-text {
+  color: #000000;
+}
+
+/* .cross-svg-btn {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  height: 18px;
+  border-radius: 50%;
+} */
+.flex-end {
+  justify-content: flex-end;
+}
+
+.title {
+  margin: 2rem auto 1rem;
+  text-align: center;
+  font-size: 22pt;
+  font-weight: 900;
+}
+
+.form {
+  margin-bottom: .25rem;
+}
+
+.form-section {
+  margin: 0 auto;
+  padding: 0 1.5rem 1.5rem 1.5rem;
+  padding-bottom: 0;
+  width: 18rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.form-title {
+  font-size: 15pt;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding-top: .75rem;
+  padding-bottom: .75rem;
+}
+
+.username-section {
+  padding: .25rem 0;
+}
+
+.username-label-section {
+  padding-bottom: 5px;
+}
+
+.username-label {
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+
+.username-input {
+  width: 20vw;
+  padding: 6px;
+}
+
+.password-section {
+  padding: .25rem 0;
+}
+
+.password-label-section {
+  padding-bottom: 5px;
+}
+
+.password-label {
+  font-size: 12pt;
+  font-weight: 500;
+}
+
+
+.password-input {
+  width: 20vw;
+  padding: 6px;
+}
+
+.submit-section {
+  padding: 1rem 0 .75rem 0;
+}
+
+.submit {
+  padding: .25rem 0;
+  text-align: center;
+  width: 21vw;
+  font-size: 12pt;
+  font-weight: 900;
+  color: #ffffff;
+  background: #808080;
+  outline: none;
+  border: none;
+  border-radius: 2px;
+}
+
+.submit:hover {
+  color: #000000;
+}
+
+.submit:focus {
+  background-color: #bfbfbf;
+}
+
+.create-account {
+  text-align: center;
+  padding-bottom: .25rem
+}
+
+.create-account-link:hover {
+  text-decoration: underline;
+}

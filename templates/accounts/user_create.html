@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="{% static 'css/user_create.css' %}">
+  <title>Create Account</title>
+</head>
+<body>
+  <div class="title">
+    ToDo
+  </div>
+  <div class="form-section">
+    <div class="form-title">Create Account</div>
+    <form class="form" method="post">
+      {% csrf_token %}
+      {% for field in form %}
+      <div class="field-section">
+        <div class="label-section">
+          <label class="label" for="{{ field.id_for_label }}">{{ field.label }}{{ field.label_suffix }}</label>
+        </div>
+        <div class="input-section">
+          {{ field }}
+        </div>
+      </div>
+      {% endfor %}
+      <div class="submit-section">
+        <input class="submit" type="submit" value="Sign In">
+      </div>
+      <div id="line"></div>
+      <div class="login-section">
+        Already have an account? <a href="{% url 'login' %}" class="login-btn">Log In</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>
